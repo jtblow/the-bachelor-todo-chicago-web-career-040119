@@ -3,7 +3,6 @@ def get_first_name_of_season_winner(data, season)
 
   data[season].each do |attributes, details|
     if attributes[details] == "Winner"
-      "name"[details] == contestant
       contestant.to_a 
       return contestant[0]
     end
