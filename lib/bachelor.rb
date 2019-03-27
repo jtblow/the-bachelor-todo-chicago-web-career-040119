@@ -9,7 +9,7 @@ def get_first_name_of_season_winner(data, season)
       return contestant[0]
     end
   end
-      
+ end     
 end
 
 def get_contestant_name(data, occupation)
