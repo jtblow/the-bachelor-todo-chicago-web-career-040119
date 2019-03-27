@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # 
   contestant = nil
   data[season_num].each do |attributes, details|
-    if season_num == season && attributes[details] == "Winner"
+    if data[season_num] == season && attributes[details] == "Winner"
       "name"[details] == contestant
       contestant.to_a 
       return contestant[0]
