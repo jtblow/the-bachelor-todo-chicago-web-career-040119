@@ -58,6 +58,12 @@ def get_average_age_for_season(data, season)
     cast_member.each do |k, v|
       v.to_i 
       ages << v 
+      ages.sum.fdiv(arr.size)
+      return ages
+    end
+  end
+end
+end
       
     
 end
