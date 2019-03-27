@@ -31,7 +31,7 @@ def count_contestants_by_hometown(data, hometown)
       people.each do |k, v|
     if v == hometown
       counter += 1 
-    return counter + k 
+     counter + k 
   end
   end  
 end
