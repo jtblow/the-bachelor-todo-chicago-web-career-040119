@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   # 
 
-  data[season].each do |attributes, details|
+  data[season].each do |people|
     attributes[details].each do == "Winner"
       contestant.to_a 
       return contestant[0]
