@@ -53,15 +53,19 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  ages = []
-  data[season].each do |cast, cast_member|
-    cast_member.each do |k, v|
-      v.to_i 
-      ages << v 
-      ages.sum.fdiv(arr.size)
-      return ages
+age = 0
+count = 0
+  data[season].each do |hash|
+    hash.each do |k,v|
+      if k == "age"
+        count += 1
+        age += v.to_f
+      end
     end
   end
+
+  answer = (age/count).round
+return answer
 end
 
       
