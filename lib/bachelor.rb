@@ -53,4 +53,5 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  data[season][cast][cast_member]["age"].collect
 end
