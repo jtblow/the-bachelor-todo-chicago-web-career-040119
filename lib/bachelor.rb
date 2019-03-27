@@ -43,7 +43,7 @@ def get_occupation(data, hometown)
  data.each do |season, arr|
    arr.each do |people, key|
      key.find do |v|
-       v == hometown
+      if v == hometown
        return "occupation"[v]
 end
 end
